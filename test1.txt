@@ -1,0 +1,14 @@
+ant,개미
+water,물
+laptop,노트북
+prohibit,금지하다
+mirror,거울
+sustainable,지속가능한
+typical,전형적인
+diverse,다양한
+neural,신경의
+expert,전문가
+propose,제의하다
+attitude,태도
+absolute,절대적인
+start,시작하다
