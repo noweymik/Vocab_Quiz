@@ -1,13 +1,14 @@
 # Vocab_Quiz ✏️
-Goal of this project : To study English(or other second lanuage) vocabulary effe
+Goal of this project : To study English(or other second lanuage) vocabulary efficiently.</br></br>
  
 ## What this project does✋🏻
 This project creates a random vocabulary quiz using inputted txt file (written words & meanings). </br>
-User can choose the type (word test / meaning test) and number of quizzes. </br></br>
+User can choose the type (word test / meaning test) and number of quizzes. </br>
  
 #### 1. Quiz function (main function)
 - First, user choose the type (word or meaning) and number of quizzes.
-- User can choose the type (word/meaning) and number of quizzes. </br>
+- Then, the user input the answer of the quizzes.
+- If the user inputs an incorrect answer, the program notifies that the user's input is incorrect and shows the correct answer.
 - Program counts how many quizzes the user got right. 
 - Show quiz score to user.
 #### 2. List function
@@ -23,10 +24,9 @@ User can choose the type (word test / meaning test) and number of quizzes. </br>
 - This program can provide personalized quizzes made from self-inserted vocabularies (txt file).
 - User can study effectively through this program which creates random quizzes that user can decide the number and type of quizzes (words/meaning).
 - User can make personalized dictionaries using Add, Delete, Modify functions. <br/></br>
- 
- 
- <h2> How to start this project✋🏻</h2>
-#### 1. Prepare the txt file which has words and meaning (ex test1.txt). <br/>
+
+## How to start this project✋🏻
+#### 1. Prepare the txt file which has words and meaning (ex test1.txt). 
  ex) word1, meaning1 <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word2, meaning2 <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and so on..  <br/>
