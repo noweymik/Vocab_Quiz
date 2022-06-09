@@ -4,18 +4,16 @@
 #include <sstream>
 #include <time.h>
 
-// 해야할 것
-// 1. 파일 이름 처음에 입력 받는 부분
-// 2. 기능들 함수로 만들지 말지
-// 3. 주석 설명 처리
+// g++ final.cpp 
 
 using namespace std;
 int Quiz(int quiz, vector<string> w, vector<string> m);
 int main(int argc, char *argv[]) {
-	string filePath = "test1.txt";
+	// string filePath = "test1.txt";
+	string filePath;
 	cout << "Welcome to 'Quiz yourself'" << endl;
-	// cout << "Please input the file(.txt) name : ";
-	// cin >> filePath;
+	cout << "Please input the file(.txt) name : ";
+	cin >> filePath;
  	
 	vector<string> word;
 	vector<string> mean;
@@ -38,13 +36,14 @@ int main(int argc, char *argv[]) {
 		}
 		file.close();
 	}
-	else {
+	else {	// file open error
 		cout << "There is no file named '" << filePath << "'\n";
 		return 0;
 	}
 	
-	int opt;
+	int opt;	// option
 	while(true) {
+		// menu
 		cout << "\n** MENU ** \n";
 		cout << "1. QUIZ" << endl;
 		cout << "2. List all words" << endl;
@@ -70,7 +69,7 @@ int main(int argc, char *argv[]) {
 			cout << "Thank you *^^*\n";
 			break;
 		}
-		else if(opt == 1) {	// 1번 퀴즈 옵션
+		else if(opt == 1) {	// 1번 quiz 옵션
 			int number_of_quiz = 0;
 			cout << "\nInput the number of questions  > ";
 			cin >> number_of_quiz;
@@ -93,12 +92,12 @@ int main(int argc, char *argv[]) {
 			string add_chose;	 
 			cout << "word : " << w_add << " / meaning : " << m_add << " (ADD : 1, CANCEL : anything except 1) > ";
 			cin >> add_chose;
-			if(add_chose == "1") {
+			if(add_chose == "1") {	// add
 				word.push_back(w_add);
 				mean.push_back(m_add);
-				cout << " > Add success!" << endl;
+				cout << " > Add success!" << endl;	// Indicates 'Add' has worked successfully.
 			}
-			else {
+			else {	// add cancel
 				cout << " > Add cancel.." << endl;
 			}
 		}
@@ -114,7 +113,7 @@ int main(int argc, char *argv[]) {
 			if(del_chose == "1") {	// delete
 				word.erase(word.begin() + del_idx);
 				mean.erase(mean.begin() + del_idx);
-				cout << " > Delete success!" << endl;
+				cout << " > Delete success!" << endl;	// Indicates 'Delete' has worked successfully.
 			}	
 			else {	// delete cancel
 				cout << " > Delete cancel.." << endl;
@@ -144,7 +143,7 @@ int main(int argc, char *argv[]) {
 			if(mod_chose == "1") {	// modify
 				word.at(mod_idx) = mod_word;
 				mean.at(mod_idx) = mod_mean;
-				cout << " > Modify success!" << endl;
+				cout << " > Modify success!" << endl;	// Indicates 'Modify' has worked successfully.
 			}	
 			else {	// modify cancel
 				cout << " > Modify cancel.." << endl;
@@ -160,22 +159,22 @@ int Quiz(int quiz, vector<string> w, vector<string> m) {
 	int len = w.size();
 	srand(time(NULL));
 
-	// user choose English(second language) word test or meaning(native language) test.
+	// user choose word(ex English) test or meaning(native language) test.
 	int type;
 	cout << "choose test type (1: word test, 2: meaning test) > ";
 	cin >> type;
 	cout << endl;
-	// english word test
+	// word test
 	if (type == 1) {
-		for(int i=1; i<=quiz; i++) {
-			int idx = rand()%len;
-			// cout << idx << endl;
+		for(int i=1; i<=quiz; i++) {	
+			int idx = rand()%len;	// make random number (== index of word list)
+
 			cout << "Q" << i << ". Write the word that corresponds to [" << m.at(idx) << "] : ";
 			cin >> answer;
-			if(answer == w.at(idx)) {
+			if(answer == w.at(idx)) {	// if the user input correct answer, count the score (Number of times the user answers correctly)
 				correct++;
 			}
-			else {
+			else {	// show correct answer if the user input incorrect answer!
 				cout << "	*Q" << i << " -> wrong !! (right answer : " << w.at(idx) << ")" << endl;
 			}
 		}
@@ -183,19 +182,19 @@ int Quiz(int quiz, vector<string> w, vector<string> m) {
 	// meaning test
 	else if(type == 2) {
 		for(int i=1; i<=quiz; i++) {
-			int idx = rand()%len;
-			// cout << idx << endl;
+			int idx = rand()%len;	// make random number (== index of word list)
+
 			cout << "Q" << i << ". Write the meaning of the [" << w.at(idx) << "] : ";
 			cin >> answer;
-			if(answer == m.at(idx)) {
+			if(answer == m.at(idx)) {	// if the user input correct answer, count the score (Number of times the user answers correctly)
 				correct++;
 			}
-			else {
-				cout << "	*Q" << i << " -> wrong !! (right answer : " << m.at(idx) << ")" << endl;
+			else {	// show correct answer if the user input incorrect answer!
+				cout << "	*Q" << i << " -> wrong !! (correct answer : " << m.at(idx) << ")" << endl;
 			}
 		}
 	}
-	cout << "\nYour score is " << correct << "/" << quiz << " *^^*";
+	cout << "\nYour score is " << correct << "/" << quiz << " *^^*";	// show score
 	cout << endl;
 	return 0;
 }

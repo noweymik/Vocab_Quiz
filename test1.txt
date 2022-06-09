@@ -12,3 +12,4 @@ propose,제의하다
 attitude,태도
 absolute,절대적인
 start,시작하다
+pencil,연필
