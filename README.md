@@ -50,7 +50,7 @@ User can choose the type (word test / meaning test) and the number of quizzes. <
   - Include Quiz, List, Add, Delete, Modify, Save functions. </br></br>
 
 ## Presentation Video (YouTube) Link 🎥
-To be continued....
+<a>https://youtu.be/v9XSwApC158</a>
 </br></br>
 ## Where can I get more help, if I need it?
 Please email me -> <a>22000136@handong.ac.kr</a>
