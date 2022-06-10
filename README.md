@@ -37,7 +37,7 @@ User can choose the type (word test / meaning test) and number of quizzes. </br>
  ```
  g++ final.cpp
  ```
-</br></br>
+</br>
 
 ## My contribution to this project✋🏻
 #### 1. Planning this project </br>
