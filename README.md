@@ -31,7 +31,13 @@ User can choose the type (word test / meaning test) and number of quizzes. </br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word2, meaning2 <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and so on..  <br/>
  
-#### 2. Git clone this project and run the program(.cpp).</br></br>
+#### 2. Git clone this project.
+
+#### 3. Execute the program(.cpp)
+ ```
+ g++ final.cpp
+ ```
+</br></br>
 
 ## My contribution to this project✋🏻
 #### 1. Planning this project </br>
