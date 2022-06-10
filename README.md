@@ -1,5 +1,5 @@
 # Quiz_Yourself ✏️
-Goal of this project : To study English(or other second lanuage) vocabulary efficiently.</br></br>
+Goal of this project : To study English(or another second language) vocabulary efficiently.</br></br>
  
 ## What this project does✋🏻
 This project creates a random vocabulary quiz using inputted txt file (written words & meanings). </br>
