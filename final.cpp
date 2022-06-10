@@ -3,6 +3,7 @@
 #include <vector>
 #include <sstream>
 #include <time.h>
+#include <algorithm>
 
 // g++ final.cpp 
 
