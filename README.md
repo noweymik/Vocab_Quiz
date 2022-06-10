@@ -3,7 +3,7 @@ Goal of this project : To study English(or another second language) vocabulary e
  
 ## What this project does✋🏻
 This project creates a random vocabulary quiz using inputted txt file (written words & meanings). </br>
-User can choose the type (word test / meaning test) and number of quizzes. </br>
+User can choose the type (word test / meaning test) and the number of quizzes. </br>
  
 #### 1. Quiz function (main function)
 - First, user choose the type (word or meaning) and number of quizzes.
@@ -21,7 +21,7 @@ User can choose the type (word test / meaning test) and number of quizzes. </br>
 - Modify the word and its meaning which in txt file. </br></br>
  
 ## Why is this project useful✋🏻
-- This program can provide personalized quizzes made from self-inserted vocabularies (txt file).
+- Unlike other quiz systems, this quiz can help the user by providing quizzes made with self-inserted vocabularies (txt file).
 - User can study effectively through this program which creates random quizzes that user can decide the number and type of quizzes (words/meaning).
 - User can make personalized dictionaries using Add, Delete, Modify functions. <br/></br>
 
