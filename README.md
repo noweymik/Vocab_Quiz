@@ -1,4 +1,4 @@
-# Vocab_Quiz ✏️
+# Quiz_Yourself ✏️
 Goal of this project : To study English(or other second lanuage) vocabulary efficiently.</br></br>
  
 ## What this project does✋🏻
