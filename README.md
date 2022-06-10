@@ -31,11 +31,13 @@ User can choose the type (word test / meaning test) and the number of quizzes. <
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word2, meaning2 <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and so on..  <br/>
  
-#### 2. Git clone this project.
-
+#### 2. Clone this project.
+ ```
+ $ git clone https://github.com/noweymik/Vocab_Quiz
+ ```
 #### 3. Execute the program(.cpp)
  ```
- g++ final.cpp
+ $ g++ final.cpp
  ```
 </br>
 
